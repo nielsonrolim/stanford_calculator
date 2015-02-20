@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var display: UILabel!
     @IBOutlet weak var history: UITextView!
     
-    var userIsInTheMiddleOfTypingANumber = false;
+    var userIsInTheMiddleOfTypingANumber = false
     var operandStack = Array<Double>()
     
     var displayValue: Double {
@@ -34,7 +34,7 @@ class ViewController: UIViewController {
         }
         
         if (userIsInTheMiddleOfTypingANumber) {
-            display.text = display.text! + digit;
+            display.text = display.text! + digit
         } else {
             display.text = digit
             userIsInTheMiddleOfTypingANumber = true
